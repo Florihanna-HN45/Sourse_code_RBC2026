@@ -13,7 +13,7 @@ def main():
     
     # CONFIGURATION - DỄ THAY ĐỔI
     CONFIG = {
-        'yolo_model': r'D:/1. STUDY/ROBOCON 2026/04012026/models/best.pt',        # Your trained model
+        'yolo_model': r'D:/1. STUDY/ROBOCON 2026/04012026/models/best-int8.tflite',        # Your trained model
         'tflite_model': r'D:/1. STUDY/ROBOCON 2026/04012026/models/tinycnn_int8.tflite',  # Your CNN model
         'confidence_threshold': 0.7,
         'camera_id': 0

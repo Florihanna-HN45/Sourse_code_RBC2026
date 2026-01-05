@@ -2,7 +2,7 @@ import os
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import cv2
 import logging
-from util import OptimizedCubeDetector, setup_camera
+from util2 import OptimizedCubeDetector, setup_camera
 
 # Config logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -14,7 +14,7 @@ def main():
     # CONFIGURATION - DỄ THAY ĐỔI
     CONFIG = {
         'yolo_model': r'D:/1. STUDY/ROBOCON 2026/04012026/models/best.pt',        # Your trained model
-        'tflite_model': r'D:/1. STUDY/ROBOCON 2026/04012026/models/cnnv2.tflite',  # Your CNN model
+        'tflite_model': r'D:/1. STUDY/ROBOCON 2026/04012026/models/final.tflite',  # Your CNN model
         'confidence_threshold': 0.7,
         'camera_id': 0
     }
