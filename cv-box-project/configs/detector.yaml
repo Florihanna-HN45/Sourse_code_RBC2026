@@ -1,0 +1,20 @@
+# configs/detector.yaml
+img_dir: ./data/images
+ann_train: ./data/annotations/train.json
+ann_val: ./data/annotations/val.json
+split_train: ./data/splits/train.txt
+split_val: ./data/splits/val.txt
+batch_size: 16
+epochs: 60
+lr: 0.02
+step_size: 30
+
+# configs/classifier.yaml
+crop_dir: ./data/crops
+split_train: ./data/splits/train_cls.csv
+split_val: ./data/splits/val_cls.csv
+batch_size: 64
+epochs: 40
+lr: 1e-3
+alpha: 1.0   # loss RF
+beta: 1.0    # loss Type
